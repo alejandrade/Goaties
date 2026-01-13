@@ -1,0 +1,44 @@
+# --- RUST & CARGO ---
+# Recursive to catch all sub-projects in your workspace
+**/target/
+**/Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# --- JETBRAINS (IntelliJ / RustRover) ---
+**/.idea/
+**/*.iml
+**/cmake-build-*/
+**/.run/
+
+# --- VS CODE ---
+**/.vscode/
+**/.history/
+**/*.code-workspace
+
+# --- CLAUDE & AI TOOLING ---
+# Hides the CLI config directory (where settings, history, and hooks live)
+**/.claude/
+# Hides local-only instructions (use CLAUDE.md for shared, .local for private)
+**/CLAUDE.local.md
+# Hides the 'claudeignore' if you don't want to share it
+**/.claudeignore
+# Hides temporary planning/task files often created by AI agents
+**/todo/*.md
+**/results/*.md
+
+# --- EDITORS & OS ---
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- DB & ENVIRONMENT ---
+**/data/
+**/*.db
+**/*.db-shm
+**/*.db-wal
+**/.env
+**/.env.*
+!**/.env.example
