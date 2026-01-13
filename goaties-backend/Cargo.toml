@@ -1,0 +1,14 @@
+[package]
+name = "goaties-backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+goaties-common = { path = "../goaties-common" }
+axum = { version = "0.8", features = ["ws"] }
+tokio.workspace = true
+serde.workspace = true
+config = "0.14"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow.workspace = true

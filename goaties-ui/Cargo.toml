@@ -1,0 +1,10 @@
+[package]
+name = "goaties-ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+goaties-common = { path = "../goaties-common", features = ["polodb"] }
+iced = "0.14.0"
+polodb_core = "5.1"
+anyhow = "1"

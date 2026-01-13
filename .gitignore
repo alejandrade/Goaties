@@ -20,12 +20,14 @@
 # Hides the CLI config directory (where settings, history, and hooks live)
 **/.claude/
 # Hides local-only instructions (use CLAUDE.md for shared, .local for private)
-**/CLAUDE.local.md
+**/CLAUDE.md
 # Hides the 'claudeignore' if you don't want to share it
 **/.claudeignore
 # Hides temporary planning/task files often created by AI agents
 **/todo/*.md
 **/results/*.md
+
+CLAUDE.md
 
 # --- EDITORS & OS ---
 *.swp

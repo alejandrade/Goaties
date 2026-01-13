@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "goaties-ui",
+    "goaties-backend"
+, "goaties-common"]
+license = "GPL-3.0-only" # or "MPL-2.0" or "LGPL-3.0-only"
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+anyhow = "1"
+tokio = { version = "1", features = ["full"] }
